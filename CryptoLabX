@@ -1,0 +1,23 @@
+# CryptoLabX.py
+
+class CryptoLabX:
+    def __init__(self, lab_name, location, research_topics):
+        self.lab_name = lab_name
+        self.location = location
+        self.research_topics = research_topics
+    
+    def display_lab_info(self):
+        print(f"Lab Name: {self.lab_name}")
+        print(f"Location: {self.location}")
+        print("Research Topics:")
+        for topic in self.research_topics:
+            print(f"- {topic}")
+
+# Example usage
+if __name__ == "__main__":
+    lab_name = "CryptoLabX"
+    location = "Virtual"
+    research_topics = ["Blockchain scalability solutions", "Crypto asset management", "DeFi protocols"]
+    
+    crypto_lab = CryptoLabX(lab_name, location, research_topics)
+    crypto_lab.display_lab_info()
